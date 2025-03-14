@@ -1,0 +1,73 @@
+.email-row {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid #f1f3f4;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.email-row:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  z-index: 1;
+  background-color: #f9f9f9;
+}
+
+.email-row.unread {
+  background-color: #ffffff;
+  font-weight: 500;
+}
+
+.email-row.read {
+  color: #5f6368;
+  background-color: #f9f9f9;
+}
+
+.email-row.selected {
+  background-color: #e8f0fe;
+}
+
+.email-checkbox {
+  margin-right: 16px;
+}
+
+.email-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-sender {
+  font-weight: inherit;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 16px;
+}
+
+.email-subject-preview {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.email-subject {
+  font-weight: inherit;
+  margin-right: 4px;
+}
+
+.email-preview {
+  color: #5f6368;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.email-date {
+  width: 100px;
+  text-align: right;
+  white-space: nowrap;
+  color: #5f6368;
+}
