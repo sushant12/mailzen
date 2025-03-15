@@ -123,7 +123,6 @@ const mockSpamEmails: EmailType[] = [
   },
 ];
 
-// Define sidebar items
 const sidebarItems: SidebarItemType[] = [
   { id: "inbox", label: "Inbox" },
   { id: "sent", label: "Sent" },
@@ -142,7 +141,6 @@ function App() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Update selectedSidebarItem based on URL path
   useEffect(() => {
     const path = location.pathname.slice(1) || "inbox";
     const validPath = sidebarItems.some((item) => item.id === path)
@@ -151,7 +149,6 @@ function App() {
     setSelectedSidebarItem(validPath);
   }, [location.pathname]);
 
-  // Get emails based on sidebar selection
   const getEmailsForView = () => {
     switch (selectedSidebarItem) {
       case "inbox":

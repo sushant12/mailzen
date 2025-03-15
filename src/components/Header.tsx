@@ -10,12 +10,10 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ profileImage }) => {
   const handleSearch = (query: string) => {
     console.log("Searching for:", query);
-    // Implement search functionality
   };
 
   const handleProfileClick = () => {
     console.log("Profile clicked");
-    // Implement profile menu functionality
   };
 
   return (

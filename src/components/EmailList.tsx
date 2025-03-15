@@ -19,7 +19,7 @@ const EmailList: React.FC<EmailListProps> = ({
           key={email.id}
           email={email}
           isSelected={selectedEmails.includes(email.id)}
-          onToggleSelect={onToggleEmailSelection}
+          onToggleSelect={() => onToggleEmailSelection(email.id)}
         />
       ))}
     </div>
